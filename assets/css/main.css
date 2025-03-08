@@ -1,0 +1,36 @@
+
+/* Project Cards */
+
+#trending {
+    overflow: hidden;
+}
+.project-card {
+    height: 400px;
+    align-items: start;
+    background: var(--bg-dark-1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-neon {
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn-neon a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,243,255,0.1);
+}
+
+/* upcomming  */
+
+#upcoming {
+    color: aliceblue;
+}

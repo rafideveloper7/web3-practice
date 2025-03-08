@@ -1,0 +1,168 @@
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-dark-1: #111111;
+    --bg-dark-2: #1a1a1a;
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc00ff;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect element dimensions */
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll on entire page */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Fullscreen Sections */
+.fullscreen-section {
+    height: 100vh;
+    /* Fixed viewport height */
+    padding-top: 80px;
+    /* Account for fixed navbar */
+    position: relative;
+    overflow-y: auto;
+    /* Enable vertical scroll within section */
+}
+
+/* ... (keep other styles the same) ... */
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glow-text {
+    text-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+}
+
+/* .navbarNav {
+    width: 100%;
+} */
+
+/* Hero Section */
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-section {
+    background: linear-gradient(45deg, rgba(11, 15, 25, 1) 0%, rgba(22, 25, 45, 1) 100%);
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--neon-blue);
+    border-radius: 50px;
+    color: var(--text-primary);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--neon-blue);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    color: var(--bg-dark);
+}
+
+#home h3 {
+    margin-top: -60px;
+}
+
+/* Neon Buttons */
+.btn-neon {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    border: none;
+    color: var(--text-primary);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-neon::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.btn-neon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(155, 155, 155, 0.3)3);
+}
+
+/* Footer */
+.footer {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    border-top: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--neon-blue);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+}
+
+.social-links a:hover {
+    background: var(--neon-blue);
+    color: var(--bg-dark);
+}

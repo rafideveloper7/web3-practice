@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Projects Finder</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand glow-text" href="#">.Innovations Web3.0</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#trending">Trending</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Trending
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Testnet</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">AI</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">NFTs</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mainnet</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Socials</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dapps</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#upcoming">Upcoming</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Testnet</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">AI</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">NFTs</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mainnet</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Socials</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dapps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#market">Market</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                </ul>
+                <button class="btn btn-neon ms-3" id="connectWallet">
+                    <i class="fas fa-wallet me-2"></i>Connect Wallet
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="fullscreen-section hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-1 mb-4">Discover Crypto Innovations</h1>
+                    <div class="search-container mx-auto">
+                        <input type="text" placeholder="Search projects, tokens, NFTs..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <h3>You will Never miss any Prooject...</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trending Projects -->
+    <section id="trending" class="fullscreen-section bg-dark-1">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row">
+                <h2 class="section-title mb-5">🔥 Trending Now</h2>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/movement.jpg" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Project Alpha</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$ 41.40M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>15.5 M</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/first.gif" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Monad ecosystem</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$ 244.00M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>5 M</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon"><a href="https://cryptorank.io/ico/monad#funding-rounds">View
+                                    Details</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/megaeth.jpg" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Mega ETH</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$ 57.73M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>8.2K</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon"> <a
+                                    href="https://cryptorank.io/drophunting/megaeth-activity254">View
+                                    Details</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/first.gif" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Project Alpha</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$12.5M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>8.2K</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/first.gif" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Project Alpha</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$12.5M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>8.2K</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/images/first.gif" class="card-img" alt="Project">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-name">Project Alpha</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>$12.5M</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>8.2K</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-neon">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects -->
+    <section id="upcoming" class="fullscreen-section bg-dark-2">
+        <div class="container h-100 d-flex align-items-center">
+            <!-- Similar structure to Trending Projects -->
+            <div class="row">
+                <h2 class="section-title mb-5">🔥 Upcoming</h2>
+                <h2>Wait for upcoming opertunities...</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="footer-heading">Innovations Web3.0</h4>
+                    <p class="footer-text">The ultimate platform for crypto discovery</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="footer-subheading">Explore</h5>
+                            <ul class="footer-menu">
+                                <li><a href="#trending">Trending</a></li>
+                                <li><a href="#upcoming">Upcoming</a></li>
+                                <li><a href="#market">Market Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-subheading">Legal</h5>
+                            <ul class="footer-menu">
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">AML</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Innovations Web3.0 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
