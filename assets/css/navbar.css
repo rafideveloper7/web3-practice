@@ -1,0 +1,13 @@
+.navbar {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: start;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.glow-text {
+    text-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+}

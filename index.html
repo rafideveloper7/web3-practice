@@ -14,15 +14,22 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/buttons.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/hero.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/projects-card.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/trustedSection.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/variable.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> -->
+
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <a class="navbar-brand glow-text" href="#">.Innovations Web3.0</a>
+            <a class="navbar-brand glow-text" href="#">.Discover Web3.0</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -101,26 +108,60 @@
 
     <!-- Hero Section -->
     <section id="home" class="fullscreen-section hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center hero-content">
                     <h1 class="display-1 mb-4">Discover Crypto Innovations</h1>
                     <div class="search-container mx-auto">
                         <input type="text" placeholder="Search projects, tokens, NFTs..." class="search-input">
-                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <button class="search-btn m-2"><i class="fas fa-search"></i></button>
                     </div>
-                </div>
-                <div class="col-12 text-center">
+                    <div class="hero-bottom col-lg-12 p-5">
+                        <button class="btn btn-neon">connect Wallet</button>
+                        <button class="btn btn-neon">Rigister Now</button>
+                    </div>
                     <h3>You will Never miss any Prooject...</h3>
                 </div>
+            </div>
+        </div>
 
+
+    </section>
+
+    <section class="trusted-section">
+        <p class="trusted-text">Trusted by the industry's leading brands</p>
+        <div class="brand-logos">
+            <p><img src="assets/images/Avalanche.png" alt="Avalanche">Avalanche</p>
+            <p><img src="assets/images/arbitrum-logo.png" alt="Arbitrum">Arbitrum</p>
+            <p><img src="assets/images/Avalanche.png" alt="Avalanche">Avalanche</p>
+            <p><img src="assets/images/arbitrum-logo.png" alt="Arbitrum">Arbitrum</p>
+            <p><img src="assets/images/Avalanche.png" alt="Avalanche">Avalanche</p>
+            <p><img src="assets/images/arbitrum-logo.png" alt="Arbitrum">Arbitrum</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h2>33 Million</h2>
+                <p>ACTIVE USERS</p>
+            </div>
+            <div class="stat-box">
+                <h2>572k+</h2>
+                <p>CREDENTIALS</p>
+            </div>
+            <div class="stat-box">
+                <h2>6,845+</h2>
+                <p>PARTNERS</p>
             </div>
         </div>
     </section>
-    
+
+
+
+
+
     <!-- Trending Projects -->
     <section id="trending" class="fullscreen-section bg-dark-1">
-        <div class="container h-100 d-flex align-items-center">
+        <div class="container h-100 d-flex">
             <div class="row">
                 <h2 class="section-title mb-5">🔥 Trending Now</h2>
                 <!-- Repeat project cards -->

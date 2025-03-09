@@ -1,0 +1,15 @@
+.btn-neon {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    border: none;
+    color: var(--text-primary);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(155, 155, 155, 0.3);
+}

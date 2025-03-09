@@ -12,13 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Ensures padding doesn't affect element dimensions */
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
-    /* Prevent horizontal scroll on entire page */
 }
 
 body {
@@ -30,15 +27,10 @@ body {
 /* Fullscreen Sections */
 .fullscreen-section {
     height: 100vh;
-    /* Fixed viewport height */
     padding-top: 80px;
-    /* Account for fixed navbar */
     position: relative;
     overflow-y: auto;
-    /* Enable vertical scroll within section */
 }
-
-/* ... (keep other styles the same) ... */
 
 /* Navigation */
 .navbar {
@@ -46,24 +38,34 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.navbar-brand {
+    font-weight: 700;
+}
+
 .glow-text {
     text-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
 }
 
-/* .navbarNav {
-    width: 100%;
-} */
-
 /* Hero Section */
-
 #home {
     display: flex;
     align-items: center;
+    background: linear-gradient(45deg, rgba(11, 15, 25, 1) 0%, rgba(22, 25, 45, 1) 100%);
 }
 
+.hero-content {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
 
-.hero-section {
-    background: linear-gradient(45deg, rgba(11, 15, 25, 1) 0%, rgba(22, 25, 45, 1) 100%);
+.hero-content .btn {
+    margin: 20px;
+    width: 200px;
+}
+
+.hero-content h3 {
+    margin-top: 90px;
 }
 
 .search-container {
@@ -72,6 +74,7 @@ body {
 }
 
 .search-input {
+    margin-top: 20px;
     width: 100%;
     padding: 1.5rem 2rem;
     background: rgba(255, 255, 255, 0.05);
@@ -99,8 +102,18 @@ body {
     color: var(--bg-dark);
 }
 
-#home h3 {
-    margin-top: -60px;
+/* Hero Bottom Buttons */
+.hero-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures buttons wrap properly */
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+.hero-bottom .btn {
+    width: 200px;
+    text-align: center;
 }
 
 /* Neon Buttons */
@@ -113,6 +126,8 @@ body {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
 }
 
 .btn-neon::after {
@@ -122,17 +137,14 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg,
-            transparent,
-            rgba(255, 255, 255, 0.1),
-            transparent);
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     transform: rotate(45deg);
     transition: all 0.5s ease;
 }
 
 .btn-neon:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(155, 155, 155, 0.3)3);
+    box-shadow: 0 0 30px rgba(155, 155, 155, 0.3);
 }
 
 /* Footer */
@@ -165,4 +177,86 @@ body {
 .social-links a:hover {
     background: var(--neon-blue);
     color: var(--bg-dark);
+}
+
+/* Responsive Design */
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .hero-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .search-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .search-input {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .btn-neon {
+        width: 100%; /* Makes buttons take full width */
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 10px;
+    }
+}
+
+/* For Mobile Screens (480px and below) */
+@media screen and (max-width: 480px) {
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-neon {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%; /* Ensures full width */
+        text-align: center;
+    }
+
+    .search-input {
+        padding: 0.8rem;
+    }
+
+    .hero-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-bottom .btn {
+        width: 100%; /* Makes buttons take full width */
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
 }
