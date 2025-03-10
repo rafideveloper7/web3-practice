@@ -32,25 +32,19 @@ body {
     overflow-y: auto;
 }
 
-/* Navigation */
-.navbar {
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.navbar-brand {
-    font-weight: 700;
-}
-
-.glow-text {
-    text-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
-}
 
 /* Hero Section */
 #home {
+    /* border: 5px solid rgb(247, 0, 255); */
     display: flex;
     align-items: center;
     background: linear-gradient(45deg, rgba(11, 15, 25, 1) 0%, rgba(22, 25, 45, 1) 100%);
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .hero-content {

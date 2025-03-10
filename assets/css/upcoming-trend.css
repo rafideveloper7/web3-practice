@@ -1,0 +1,10 @@
+.upcoming-container {
+    margin: 20px;
+    height: fit-content;
+    /* border: 5px solid hsl(0, 0%, 100%); */
+    background-image: url("../images/upcoming-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}

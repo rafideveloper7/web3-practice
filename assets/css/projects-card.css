@@ -1,9 +1,16 @@
 #trending {
+    background-image: url("../images/trending-bg.jpg");
+    background-size: cover;
+    margin: 20px;
     overflow: hidden;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: fit-content;
 }
 
 .project-card {
-    height: 400px;
+    height: 450px;
     align-items: start;
     background: var(--bg-dark-1);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -12,11 +19,20 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 243, 255, 0.1);
+.card-body {
+    padding: 10px;
+    align-items: start;
+    margin: 20px;
 }
 
-#upcoming {
-    color: aliceblue;
+.card-body .btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(254, 255, 255, 0.6);
 }
